@@ -1,0 +1,119 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Rubik:wght@600&display=swap");
+
+/*General*/
+html,
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+/*Typography*/
+h2 {
+  margin: 0;
+}
+
+/*Table*/
+caption {
+  background-color: #cd7f31;
+  color: #111;
+  font-size: 25px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #111;
+  color: #fff;
+  text-shadow: 1px 1px 0 #111;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 0.5em;
+  opacity: 0.8;
+}
+
+th,
+td {
+  height: 40px;
+  width: 70px;
+  padding: 5px;
+  border: 1px solid #111;
+  border-radius: 3px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #111;
+}
+
+/*Id*/
+#calendar {
+  background-image: url("images/calendar_background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#header,
+#footer {
+  font-family: "Aboreto", cursive;
+  font-size: 30px;
+  background-color: #861e22;
+  color: #111;
+}
+
+#hoverevents {
+  background-color: #cd7f31;
+  border: 2px solid #111;
+  padding: 3px;
+}
+
+/*Class*/
+.day {
+  background-color: #861e22;
+  border: 2px solid #111;
+  padding: 3px;
+}
+
+.weeknr {
+  background-color: #861e22;
+  border: 2px solid #111;
+  padding: 3px;
+}
+
+/* -- PSEUDO -- */
+
+/*Table*/
+tr:nth-child(odd) {
+  background-color: #861e22;
+}
+
+tr:nth-child(even) {
+  background-color: #cd7f31;
+}
+
+/*Id's*/
+#header::before {
+  content: "⇦ ";
+}
+
+#footer::after {
+  content: " ⇨";
+}
+
+/*Class*/
+.day::first-letter {
+  font-size: 22px;
+  color: #111;
+  text-shadow: 1px 1px 0 #861e22;
+}
+
+.odd:hover {
+  background-color: #fff;
+  color: #861e22;
+  text-shadow: none;
+  font-size: 22px;
+}
+
+.even:hover {
+  background-color: #fff;
+  color: #cd7f31;
+  text-shadow: none;
+  font-size: 22px;
+}
